@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="text-white bg-neutral-900 flex flex-col w-32 h-screen fixed">
+      <img
+        src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
+        alt="avatar small photo"
+      />
+      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+        ><i class="fa fa-home w3-xxlarge text-3xl pb-2"></i>
+        <p class="text-sm pb-2">HOME</p></a
+      >
+      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+        ><i class="fa fa-user w3-xxlarge text-3xl pb-2"></i>
+        <p class="text-sm pb-2">ABOUT</p></a
+      >
+      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+        ><i class="fa fa-eye w3-xxlarge text-3xl pb-2"></i>
+        <p class="text-sm pb-2">PHOTOS</p></a
+      >
+      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+        ><i class="fa fa-envelope w3-xxlarge text-3xl pb-2"></i>
+        <p class="text-sm pb-2">CONTACT</p></a
+      >
+    </nav>
+    <!-- Page Content -->
+    <section class="bg-black text-white ml-32 px-6 py-3 text-center">
+      <!-- Header Section -->
+      <header class="py-9 px-6">
+        <h1 class="text-6xl font-normal my-2.5">I'm John Doe.</h1>
+        <p class="my-3.5 py-4">Photographer and Web Designer.</p>
+        <img
+          src="https://www.w3schools.com/w3images/man_smoke.jpg"
+          alt="Man smoke photo"
+          height="1108"
+          width="992"
+          class="mx-auto"
+        />
+      </header>
+      <!-- Bio Section -->
+      <section class="bio-section mx-auto py-16 text-justify max-w-5xl">
+        <h2 class="text-gray-100 text-3xl my-2.5">My Name</h2>
+        <hr class="my-5 w-48 opacity-60" />
+        <p class="text-neutral-500">
+          Some text about me. Some text about me. I am lorem ipsum consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <h3 class="text-gray-100 text-2xl my-2.5 py-4">My Skills</h3>
+        <p class="tracking-[4px] text-neutral-500 text-[18px] my-[15px]">
+          Photography
+        </p>
+        <div class="w-full h-6 mb-4 bg-gray-200 rounded-none dark:bg-white">
+          <div
+            class="h-6 bg-zinc-700 rounded-none dark:bg-zinc-700"
+            style="width: 95%"
+          ></div>
+        </div>
+        <p class="tracking-[4px] text-neutral-500 text-[18px] my-[15px]">
+          Web Design
+        </p>
+        <div class="w-full h-6 mb-4 bg-gray-200 rounded-none dark:bg-white">
+          <div
+            class="h-6 bg-zinc-700 rounded-none dark:bg-zinc-700"
+            style="width: 85%"
+          ></div>
+        </div>
+        <p class="tracking-[4px] text-neutral-500 text-[18px] my-[15px]">
+          Photoshop
+        </p>
+        <div class="w-full h-6 mb-4 bg-gray-200 rounded-none dark:bg-white">
+          <div
+            class="h-6 bg-zinc-700 rounded-none dark:bg-zinc-700"
+            style="width: 80%"
+          ></div>
+        </div>
+        <br />
+        <div
+          class="bio-section--stats my-4 py-4 bg-white text-black flex justify-around"
+        >
+          <div class="my-4">
+            <span class="text-[24px] flex justify-center">11+</span>Partners
+          </div>
+          <div class="my-4">
+            <span class="text-[24px] flex justify-center">55+</span> Projects
+            Done
+          </div>
+          <div class="my-4">
+            <span class="text-[24px] flex justify-center">89+</span> Happy
+            Clients
+          </div>
+          <div class="my-4">
+            <span class="text-[24px] flex justify-center">150+</span> Meetings
+          </div>
+        </div>
+        <button
+          class="bg-white text-black py-2 px-4 rounded-none inline-flex items-center hover:bg-neutral-400 my-3"
+        >
+          <svg
+            class="fill-current w-4 h-4 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+          </svg>
+          <span>Download Resume</span>
+        </button>
+      </section>
+    </section>
+  </body>
+</html>
