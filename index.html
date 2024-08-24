@@ -19,33 +19,38 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="text-white bg-neutral-900 flex flex-col w-32 h-screen fixed">
+    <nav
+      class="md:flex text-white bg-neutral-900 flex md:flex-col w-full justify-center md:w-32 md:h-screen fixed"
+    >
       <img
         src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
         alt="avatar small photo"
+        class="hidden md:flex"
       />
       <a href="#home" class="px-6 py-3 text-center hover:bg-black"
-        ><i class="fa fa-home w3-xxlarge text-3xl pb-2"></i>
-        <p class="text-sm pb-2">HOME</p></a
+        ><i class="fa fa-home w3-xxlarge text-3xl pb-2 hidden md:block"></i>
+        <p class="text-sm md:pb-2">HOME</p></a
       >
       <a href="#about" class="px-6 py-3 text-center hover:bg-black"
-        ><i class="fa fa-user w3-xxlarge text-3xl pb-2"></i>
-        <p class="text-sm pb-2">ABOUT</p></a
+        ><i class="fa fa-user w3-xxlarge text-3xl pb-2 hidden md:block"></i>
+        <p class="text-sm md:pb-2">ABOUT</p></a
       >
       <a href="#photos" class="px-6 py-3 text-center hover:bg-black"
-        ><i class="fa fa-eye w3-xxlarge text-3xl pb-2"></i>
-        <p class="text-sm pb-2">PHOTOS</p></a
+        ><i class="fa fa-eye w3-xxlarge text-3xl pb-2 hidden md:block"></i>
+        <p class="text-sm md:pb-2">PHOTOS</p></a
       >
       <a href="#contact" class="px-6 py-3 text-center hover:bg-black"
-        ><i class="fa fa-envelope w3-xxlarge text-3xl pb-2"></i>
-        <p class="text-sm pb-2">CONTACT</p></a
+        ><i class="fa fa-envelope w3-xxlarge text-3xl pb-2 hidden md:block"></i>
+        <p class="text-sm md:pb-2">CONTACT</p></a
       >
     </nav>
     <!-- Page Content -->
-    <section class="bg-black text-white ml-32 px-6 py-3 text-center">
+    <section class="md:ml-32 bg-black text-white ml-0 px-6 py-3 text-center">
       <!-- Header Section -->
       <header id="home" class="py-9 px-6">
-        <h1 class="text-6xl font-normal my-2.5">I'm John Doe.</h1>
+        <h1 class="text-6xl font-normal my-2.5">
+          <!--<span class=""></span>-->I'm John Doe.
+        </h1>
         <p class="my-3.5 py-4">Photographer and Web Designer.</p>
         <img
           src="https://www.w3schools.com/w3images/man_smoke.jpg"
@@ -104,21 +109,27 @@
         </div>
         <br />
         <div
-          class="bio-section--stats my-4 py-4 bg-white text-black flex justify-around"
+          class="bio-section--stats my-4 py-4 bg-white text-black flex flex-col md:flex-row md:justify-around"
         >
           <div class="my-4">
-            <span class="text-[24px] flex justify-center">11+</span>Partners
+            <span class="text-[24px] flex justify-center text-center"
+              >11+<br />Partners</span
+            >
           </div>
           <div class="my-4">
-            <span class="text-[24px] flex justify-center">55+</span> Projects
-            Done
+            <span class="text-[24px] flex text-center justify-center"
+              >55+<br />Projects Done</span
+            >
           </div>
           <div class="my-4">
-            <span class="text-[24px] flex justify-center">89+</span> Happy
-            Clients
+            <span class="text-[24px] flex text-center justify-center"
+              >89+<br />Happy Clients</span
+            >
           </div>
           <div class="my-4">
-            <span class="text-[24px] flex justify-center">150+</span> Meetings
+            <span class="text-[24px] flex text-center justify-center"
+              >150+<br />Meetings</span
+            >
           </div>
         </div>
         <button
@@ -134,8 +145,8 @@
           <span>Download Resume</span>
         </button>
         <h3 class="text-gray-100 text-2xl my-2.5 py-4">My Price</h3>
-        <div class="price-cards flex gap-5">
-          <div class="price-cards--basic mb-4 w-1/2">
+        <div class="price-cards flex gap-5 flex-col md:flex-row items-center">
+          <div class="price-cards--basic mb-4 w-full md:w-1/2">
             <ul
               class="text-black bg-white opacity-60 text-center hover:opacity-100 list-none p-0 m-0 divide-y"
             >
@@ -159,7 +170,7 @@
               </li>
             </ul>
           </div>
-          <div class="price-cards--pro mb-4 w-1/2">
+          <div class="price-cards--pro mb-4 w-full md:w-1/2">
             <ul
               class="text-black bg-white opacity-60 text-center hover:opacity-100 list-none p-0 m-0 divide-y"
             >
@@ -211,8 +222,8 @@
       <section id="photos" class="py-16 mx-auto text-justify max-w-5xl">
         <h2 class="text-gray-100 text-3xl my-2.5">My Photos</h2>
         <hr class="my-5 w-48 opacity-60" />
-        <div class="photos-grid px-2 flex mx-[-16px]">
-          <div class="px-2 w-1/2">
+        <div class="photos-grid px-2 flex flex-col md:flex-row mx-[-16px]">
+          <div class="px-2 w-full md:w-1/2">
             <img
               src="https://www.w3schools.com/w3images/wedding.jpg"
               alt="wedding photo"
@@ -229,7 +240,7 @@
               class="w-full mb-3"
             />
           </div>
-          <div class="px-2 w-1/2">
+          <div class="px-2 w-full md:w-1/2">
             <img
               src="https://www.w3schools.com/w3images/underwater.jpg"
               alt="underwater photo"
@@ -320,6 +331,7 @@
           </p>
         </form>
       </section>
+      <!-- Footer Section -->
       <footer
         class="flex flex-column text-justify text-neutral-500 mx-auto max-w-5xl py-16"
       >
