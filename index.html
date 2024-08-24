@@ -24,19 +24,19 @@
         src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
         alt="avatar small photo"
       />
-      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+      <a href="#home" class="px-6 py-3 text-center hover:bg-black"
         ><i class="fa fa-home w3-xxlarge text-3xl pb-2"></i>
         <p class="text-sm pb-2">HOME</p></a
       >
-      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+      <a href="#about" class="px-6 py-3 text-center hover:bg-black"
         ><i class="fa fa-user w3-xxlarge text-3xl pb-2"></i>
         <p class="text-sm pb-2">ABOUT</p></a
       >
-      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+      <a href="#photos" class="px-6 py-3 text-center hover:bg-black"
         ><i class="fa fa-eye w3-xxlarge text-3xl pb-2"></i>
         <p class="text-sm pb-2">PHOTOS</p></a
       >
-      <a href="#" class="px-6 py-3 text-center hover:bg-black"
+      <a href="#contact" class="px-6 py-3 text-center hover:bg-black"
         ><i class="fa fa-envelope w3-xxlarge text-3xl pb-2"></i>
         <p class="text-sm pb-2">CONTACT</p></a
       >
@@ -44,7 +44,7 @@
     <!-- Page Content -->
     <section class="bg-black text-white ml-32 px-6 py-3 text-center">
       <!-- Header Section -->
-      <header class="py-9 px-6">
+      <header id="home" class="py-9 px-6">
         <h1 class="text-6xl font-normal my-2.5">I'm John Doe.</h1>
         <p class="my-3.5 py-4">Photographer and Web Designer.</p>
         <img
@@ -56,7 +56,10 @@
         />
       </header>
       <!-- Bio Section -->
-      <section class="bio-section mx-auto py-16 text-justify max-w-5xl">
+      <section
+        id="about"
+        class="bio-section mx-auto py-16 text-justify max-w-5xl"
+      >
         <h2 class="text-gray-100 text-3xl my-2.5">My Name</h2>
         <hr class="my-5 w-48 opacity-60" />
         <p class="text-neutral-500">
@@ -205,7 +208,7 @@
         </div>
       </section>
       <!-- Photos Section -->
-      <section class="py-16 mx-auto text-justify max-w-5xl">
+      <section id="photos" class="py-16 mx-auto text-justify max-w-5xl">
         <h2 class="text-gray-100 text-3xl my-2.5">My Photos</h2>
         <hr class="my-5 w-48 opacity-60" />
         <div class="photos-grid px-2 flex mx-[-16px]">
@@ -250,6 +253,96 @@
           </div>
         </div>
       </section>
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 mx-auto py-16 text-justify max-w-5xl">
+        <h2 class="text-gray-100 text-3xl my-2.5">Contact Me</h2>
+        <hr class="my-5 w-48 opacity-60" />
+        <div class="my-4">
+          <p class="my-[15px]">
+            <i class="fa-solid fa-location-dot mr-4 text-4xl"></i>
+            <span class="text-neutral-500">Chicago, US</span>
+          </p>
+          <p class="my-[15px]">
+            <i class="fa-solid fa-phone mr-4 text-4xl"></i
+            ><span class="text-neutral-500">Phone: +00 151515</span>
+          </p>
+          <p class="my-[15px]">
+            <i class="fa-solid fa-envelope mr-4 text-4xl"></i
+            ><span class="text-neutral-500">Email: mail@mail.com</span>
+          </p>
+        </div>
+        <br />
+        <p class="text-neutral-500">Let's get in touch. Send me a message:</p>
+        <form action="">
+          <p class="my-[15px]">
+            <input
+              class="p-2 w-full"
+              type="text"
+              placeholder="Name"
+              required=""
+              name="Name"
+            />
+          </p>
+          <p class="my-[15px]">
+            <input
+              class="p-2 w-full"
+              type="text"
+              placeholder="Email"
+              required=""
+              name="Email"
+            />
+          </p>
+          <p class="my-[15px]">
+            <input
+              class="p-2 w-full"
+              type="text"
+              placeholder="Subject"
+              required=""
+              name="Subject"
+            />
+          </p>
+          <p class="my-[15px]">
+            <input
+              class="p-2 w-full"
+              type="text"
+              placeholder="Message"
+              required=""
+              name="Message"
+            />
+          </p>
+          <p class="my-[15px]">
+            <button
+              class="bg-white text-black py-2 px-4 rounded-none inline-flex items-center hover:bg-neutral-400"
+              type="submit"
+            >
+              <i class="fa fa-paper-plane mr-2"></i> SEND MESSAGE
+            </button>
+          </p>
+        </form>
+      </section>
+      <footer
+        class="flex flex-column text-justify text-neutral-500 mx-auto max-w-5xl py-16"
+      >
+        <div class="footer-section py-2">
+          <i class="fa-brands fa-facebook pr-1 hover:opacity-60 text-xl"></i>
+          <i class="fa-brands fa-instagram pr-1 hover:opacity-60 text-xl"></i>
+          <i class="fa-brands fa-snapchat pr-1 hover:opacity-60 text-xl"></i>
+          <i class="fa-brands fa-pinterest pr-1 hover:opacity-60 text-xl"></i>
+          <i class="fa-brands fa-x-twitter pr-1 hover:opacity-60 text-xl"></i>
+          <i class="fa-brands fa-linkedin pr-1 hover:opacity-60 text-xl"></i>
+          <div class="pt-4">
+            <p class="powered-by">
+              Powered by
+              <a
+                href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank"
+                class="hover:text-green-500"
+                >Adham Bahaa</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
     </section>
   </body>
 </html>
